@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hunger</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <!-- We import arjs version without NFT but with marker + location based support -->
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <!-- SweetAlert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+  <script>
+   const firebaseConfig = {
+  apiKey: "AIzaSyCGWrzfm6do-1amCMCU-fNt-9w8zThlJeI",
+  authDomain: "ecommm-771e3.firebaseapp.com",
+  projectId: "ecommm-771e3",
+  storageBucket: "ecommm-771e3.appspot.com",
+  messagingSenderId: "870403526650",
+  appId: "1:870403526650:web:351dcdd996434643aa5e43"
+};
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <!-- Local StyleSheet -->
+  <link href="./style.css" rel="stylesheet" />
+  <script src="./js/markerHandler.js"></script>
+  <script src="./js/addMarkers.js"></script>
+  <script src="./js/addButtons.js"></script>
+  <script src="./js/stars.js"></script>
+</head>
+
+<body style="margin : 0px; overflow: hidden; background-color:blanchedalmond;">
+<img src="hunger.jpg" alt="Hunger" width="360">
+  <h2 style="margin-left: 3px; font-family: 'Times New Roman', Times, serif ; margin-top: 35px;"> WELCOME TO HUNGER! </h2>
+  <h3 style="margin-top: 40px;margin-left: 40px;font-family: 'Times New Roman', Times, serif;">MENU:</h3>
+<ol>
+  <li style="margin-left: 30px;font-family: 'Times New Roman', Times, serif;size: 30px;">SEASAME BAGEL</li>
+  <!--<a href=""></a>-->
+</ol>
+<a href="barcode.html">
+  <button style="height: 30px;border-radius: 19px;margin-top: 100px;margin-left: 90px;font-family: 'Times New Roman', Times, serif;background-color: orange;color: black;">BARCODE</button>
+</a>
+</body>
+
+</html>
